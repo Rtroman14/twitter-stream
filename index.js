@@ -108,7 +108,7 @@ function streamConnect(retryAttempt) {
                     "This stream is currently at the maximum allowed connection limit."
                 ) {
                     console.log(data.detail);
-                    await slackNotification(data.detail, true);
+                    // await slackNotification(data.detail, true);
                     process.exit(1);
                 } else {
                     // Keep alive signal received. Do nothing.
